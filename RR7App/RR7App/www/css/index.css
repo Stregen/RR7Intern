@@ -1,0 +1,115 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+ 
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color: #E4E4E4;
+    background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4) );
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 12px;
+    /*background: url(../images/niko.jpg) center, no-repeat;*/
+}
+ 
+ 
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+   
+}
+ 
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+ 
+.ScrollMenu {
+    background-color: grey;
+    border: 3px solid black;
+    width: 100px;
+    overflow: auto;
+    height: 100vh;
+ 
+}
+ 
+.ScrollMenu button {
+        display: block;
+        width: 90px;
+        background-color: white;
+        border: 3px solid black;
+        height: 90px;
+        /*margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        margin-top: 2px;*/
+        margin: auto,auto,2px,2px;
+        padding: 2px;
+        font-size: 16px;
+    }
+ 
+.IOmenu {
+    background-color: grey;
+    border: 3px solid black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -50px;
+}
+ 
+.IOmenu button {
+        width: 90px;
+        background-color: white;
+        border: 3px solid black;
+        height: 90px;
+        /*margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        margin-top: 2px;*/
+        margin:auto,auto,2px,2px;
+        padding: 2px;
+        font-size: 16px;
+    }
+ 
+.RightScrollMenu {
+    background-color: grey;
+    border: 3px solid black;
+    width: 100px;
+    overflow: auto;
+    height: 100vh;
+}
+ 
+    .RightScrollMenu button {
+        display: block;
+        width: 90px;
+        background-color: white;
+        border: 3px solid black;
+        height: 90px;
+        /*margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        margin-top: 2px;*/
+        margin: auto,auto,2px,2px;
+        padding: 2px;
+        font-size: 16px;
+    }
