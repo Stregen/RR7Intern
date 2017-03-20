@@ -11,7 +11,8 @@
 })();
 
 function left45Click() {
-    var datadump = document.getElementById("SequenceText").value;
-    document.getElementById("SequenceText").innerHTML = "Yo" + datadump;
+    var datadump = document.getElementById("SequenceText").innerText;
+    var buffer = datadump + " yo\n";
+    document.getElementById("SequenceText").innerHTML = buffer ;
     console.log("Pressed");
 }
