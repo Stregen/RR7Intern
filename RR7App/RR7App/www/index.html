@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <!--
@@ -22,32 +22,27 @@
         <h1>RR7</h1>
     </header>
 
-    <div class="ScrollMenu">
+    <div class="TopButtonMenu">
+        <button type="button" id="left45" onclick="left45Click()">45 Left</button>
         <button class="button">Forward</button>
+        <button class="button">45 Right</button>
+    </div> 
+    
+    <div class="MidButtonMenu">
+        <button class="button">90 Left</button>
         <button class="button">Backwards</button>
-        <button class="button">90 left</button>
-        <button class="button">90 right</button>
-        <button class="button">45 left</button>
-        <button class="button">45 right</button>
-        <button class="button">Loop</button>
-
+        <button class="button">90 Right</button>
     </div>
 
-    <div class="IOmenu">
+    <div class="BotButtonMenu">
         <button class="button">Start</button>
-        <button class="button">gh</button>
         <button class="button">Stop</button>
+        <button class="button">Undo</button>
     </div>
 
-    <div class="RightScrollMenu">
-        <button class="button">Forward</button>
-        <button class="button">Backwards</button>
-        <button class="button">90 left</button>
-        <button class="button">90 right</button>
-        <button class="button">45 left</button>
-        <button class="button">45 right</button>
-        <button class="button">Loop</button>
-
+    <div class="SequenceText">
+        <textarea rows="4" cols="50" class="SequenceText" readonly></textarea>
+        
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
