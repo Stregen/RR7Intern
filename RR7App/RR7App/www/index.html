@@ -19,29 +19,29 @@
 <body>
 
     <header>
-        <h1>RR7</h1>
+        <h1 id="Header">RR7</h1>
     </header>
 
     <div class="TopButtonMenu">
-        <button type="button" id="left45" onclick="left45Click()">45 Left</button>
-        <button class="button">Forward</button>
-        <button class="button">45 Right</button>
+        <button class="button" type="button" id="left45" onclick="left45Click()">Left 45</button>
+        <button class="button" type="button" id="forward" onclick="forwardClick()" >Forward</button>
+        <button class="button" type="button" id="right45" onclick="right45Click()">Right 45</button>
     </div> 
     
     <div class="MidButtonMenu">
-        <button class="button">90 Left</button>
-        <button class="button">Backwards</button>
-        <button class="button">90 Right</button>
+        <button class="button" type="button" id="left90" onclick="left90Click()">Left 90</button>
+        <button class="button" type="button" id="backwards" onclick="backwardsClick()">Backwards</button>
+        <button class="button" type="button" id="right90" onclick="right90Click()" >Right 90</button>
     </div>
 
     <div class="LowerButtonMenu">
-        <button class="button">Start</button>
-        <button class="button">Stop</button>
-        <button class="button">Undo</button>
+        <button class="button" type="button" id="start" onclick="startClick()">Start</button>
+        <button class="button" type="button" id="clear"  onclick="clearClick()">Clear</button>
+        <button class="button" type="button" id="undo" onclick="undoClick()">Undo</button>
     </div>
 
     <div id="SequenceText">
-        <textarea rows="4" cols="50" class="SequenceText"readonly>Click buttons to start</textarea>
+        <textarea rows="4" cols="50" id="Textbox" class="SequenceText"readonly placeholder="Click de buttonz"></textarea>
         
     </div>
 

@@ -11,8 +11,62 @@
 })();
 
 function left45Click() {
-    var datadump = document.getElementById("SequenceText").innerText;
-    var buffer = datadump + " yo\n";
-    document.getElementById("SequenceText").innerHTML = buffer ;
+    var datadump = document.getElementById("Textbox").value;
+    var buffer =" Yo";
+    document.getElementById("Textbox").innerHTML = datadump+buffer;
+    console.log("Pressed");
+}
+
+function left90Click() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function right90Click() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function right45Click() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function forwardClick() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function backwardsClick() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function clearClick() {
+    document.getElementById("Textbox").innerHTML = ""; 
+    console.log("Pressed");
+}
+
+function startClick() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
+    console.log("Pressed");
+}
+
+function undoClick() {
+    var datadump = document.getElementById("Textbox").value;
+    var buffer = " Yo";
+    document.getElementById("Textbox").innerHTML = datadump + buffer;
     console.log("Pressed");
 }
