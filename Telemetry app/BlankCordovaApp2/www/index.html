@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>BlankCordovaApp2</title>
+    </head>
+    <body style="height: 100%;">
+        <div>
+        <ul class="tab">
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Bluetooth')"id="bluetooth">BT</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Sensors')">Sensor</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Engines')">Engine</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Data')">Data</a></li>
+        </ul>
+
+        <div style="height: 100%;" id="Bluetooth" class="tabcontent">
+            <h3>Bluetooth</h3>
+                MAC Address:
+                <br n>
+                <!--<input id="MAC" type="text" value="D0:7E:35:9A:DD:40" />-->
+                <input id="MAC" type="text" value="00:06:66:6C:A5:B0" />
+                <br>
+                <button type="button" id="init" onclick="init()" style="width: 100px;">Init BT</button>
+                <br>
+                <input id="sendingText" type="text" value="Text to send" />
+                <br>
+                <button type="button" id="send" onclick="send()" style="width: 100px;">Send</button>
+                <br>
+        </div>
+
+        <div id="Sensors" class="tabcontent">
+            <h3>Sensors</h3>
+            <h1>Sensor1: </h1><p class="sensor1">N/A</p>
+            <h1>Sensor2: </h1><p class="sensor2">N/A</p>
+            <h1>Sensor3: </h1><p class="sensor3">N/A</p>
+        </div>
+        
+        <div id="Engines" class="tabcontent">
+            <h3>Engines</h3>
+            <h1>Tach Count Right: </h1><p class="tachR">N/A</p>
+            <h1>Tach Count Left: </h1><p class="tachL">N/A</p>
+        </div>
+
+        <div id="Data" class="tabcontent">
+            <!--<h3>Data dump</h3>
+            <h1>Sensor1: </h1><p class="sensor1">N/A</p>
+            <h1>Sensor2: </h1><p class="sensor2">N/A</p>
+            <h1>Sensor3: </h1><p class="sensor3">N/A</p>
+            <h1>Tach Count Right: </h1><p class="tachR">N/A</p>
+            <h1>Tach Count Left: </h1><p class="tachL">N/A</p>-->
+            <textarea id="datadump" rows="15" cols="17" readonly></textarea>
+</div>
+
+
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+         </div>
+    </body>
+</html>
