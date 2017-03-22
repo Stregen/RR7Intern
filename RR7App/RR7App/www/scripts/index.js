@@ -1,4 +1,7 @@
-﻿(function () {
+﻿var counter = 0;
+var sequenceArray = [];
+
+(function () {
     "use strict";
 
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
@@ -11,62 +14,77 @@
 })();
 
 function left45Click() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer =" Yo";
-    document.getElementById("Textbox").innerHTML = datadump+buffer;
-    console.log("Pressed");
+    console.log("Pressed 45 left");
+    sequenceArray.push("Left 45");
+    counter++;
+    textAreaFunc();
 }
 
 function left90Click() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed 90 left");
+    sequenceArray.push("Left 90");
+    counter++;
+    textAreaFunc();
 }
 
 function right90Click() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed right 90");
+    sequenceArray.push("Right 90");
+    counter++;
+    textAreaFunc();
 }
 
 function right45Click() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed right 45");
+    sequenceArray.push("Right 45");
+    counter++;
+    textAreaFunc();
 }
 
 function forwardClick() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed forward");
+    sequenceArray.push("Forward");
+    counter++;
+    textAreaFunc();
 }
 
 function backwardsClick() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed backwards");
+    sequenceArray.push("Backwards");
+    counter++;
+    textAreaFunc();
 }
 
 function clearClick() {
     document.getElementById("Textbox").innerHTML = ""; 
-    console.log("Pressed");
+    console.log("Pressed clear");
+    for (var i = 0; i < counter; i++) {
+        sequenceArray.pop();
+    }
+    counter = 0;
+    console.log("Pressed empty. Array and counter resat");
 }
 
 function startClick() {
     var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
+    var buffer = "Placeholder - this button doesn't do anything... YET!";
     document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    console.log("Pressed start");
 }
 
 function undoClick() {
-    var datadump = document.getElementById("Textbox").value;
-    var buffer = " Yo";
-    document.getElementById("Textbox").innerHTML = datadump + buffer;
-    console.log("Pressed");
+    sequenceArray.pop();
+    counter--;
+    console.log("Pressed undo");
+    textAreaFunc();
+}
+
+function textAreaFunc() {
+    document.getElementById("Textbox").innerHTML = "";
+
+    for (i = 0; i < counter; i++) {
+        var buffer = ""+sequenceArray[counter];
+        document.getElementById("Textbox").innerHTML = sequenceArray;
+        console.log(buffer);
+    }
 }

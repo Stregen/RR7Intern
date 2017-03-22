@@ -108,5 +108,12 @@ h1 {
 
 #start{
     color:green;
-    border-color: pink;
+}
+
+#clear {
+    color:blue
+}
+
+#undo {
+    color:red
 }
