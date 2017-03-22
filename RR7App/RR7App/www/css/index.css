@@ -116,29 +116,29 @@ h1 {
 
 #undo {
     color:red;
-    /*background: url(../images/backwards.png) center;*/ 
+    /*background: url(../images/backwards.png) center no-repeat;*/ 
 }
 
 #left45 {
-    background: url(../images/left45.png) center;
+    background: url(../images/left45.png) center no-repeat;
 }
 
 #right45 {
-    background: url(../images/right45.png) center;
+    background: url(../images/right45.png) center no-repeat;
 }
 
 #left90 {
-    background: url(../images/left90.png) center;
+    background: url(../images/left90.png) center no-repeat;
 }
 
 #right90 {
-    background: url(../images/right90.png) center;
+    background: url(../images/right90.png) center no-repeat;
 }
 
 #forward {
-    background: url(../images/forwards.png) center;
+    background: url(../images/forwards.png) center no-repeat;
 }
 
 #backwards {
-    background: url(../images/backwards.png) center;
+    background: url(../images/backwards.png) center no-repeat;
 }

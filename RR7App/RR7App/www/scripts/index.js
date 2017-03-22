@@ -15,7 +15,8 @@ var sequenceArray = [];
 
 function left45Click() {
     console.log("Pressed 45 left");
-    sequenceArray.push("Left 45");
+    sequenceArray.push("../images/left45.png");
+    console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
 }
@@ -50,7 +51,7 @@ function forwardClick() {
 
 function backwardsClick() {
     console.log("Pressed backwards");
-    sequenceArray.push("Backwards");
+    sequenceArray.push();
     counter++;
     textAreaFunc();
 }
@@ -83,8 +84,16 @@ function textAreaFunc() {
     document.getElementById("Textbox").innerHTML = "";
 
     for (i = 0; i < counter; i++) {
-        var buffer = ""+sequenceArray[counter];
-        document.getElementById("Textbox").innerHTML = sequenceArray;
-        console.log(buffer);
+        var s = sequenceArray[counter]
+        var imgPath = "<img src='" + s + "' />";
+        var buffer = "" + sequenceArray[counter];
+        document.getElementById("Textbox").innerHTML += imgPath;
+        console.log(imgPath);
     }
 }
+
+var createImage = function (src) {
+    var img = new Image();
+    img.src = src;
+    return img;
+};

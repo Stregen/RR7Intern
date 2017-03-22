@@ -23,15 +23,15 @@
     </header>
 
     <div class="TopButtonMenu">
-        <button class="button" type="button" id="left45" onclick="left45Click()">Left 45</button>
-        <button class="button" type="button" id="forward" onclick="forwardClick()" >Forward</button>
-        <button class="button" type="button" id="right45" onclick="right45Click()">Right 45</button>
+        <button class="button" type="button" id="left45" onclick="left45Click()"></button>
+        <button class="button" type="button" id="forward" onclick="forwardClick()" ></button>
+        <button class="button" type="button" id="right45" onclick="right45Click()"></button>
     </div> 
     
     <div class="MidButtonMenu">
-        <button class="button" type="button" id="left90" onclick="left90Click()">Left 90</button>
-        <button class="button" type="button" id="backwards" onclick="backwardsClick()">Backwards</button>
-        <button class="button" type="button" id="right90" onclick="right90Click()" >Right 90</button>
+        <button class="button" type="button" id="left90" onclick="left90Click()"></button>
+        <button class="button" type="button" id="backwards" onclick="backwardsClick()"></button>
+        <button class="button" type="button" id="right90" onclick="right90Click()" ></button>
     </div>
 
     <div class="LowerButtonMenu">
@@ -40,13 +40,18 @@
         <button class="button" type="button" id="undo" onclick="undoClick()">Undo</button>
     </div>
 
-    <div id="SequenceText">
+    <!--<div id="SequenceText">
         <textarea rows="4" cols="50" id="Textbox" class="SequenceText"readonly placeholder="Click any button to start a sequence"></textarea>
         
-    </div>
+    </div>-->
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
+     <div class="smolPics" id="Textbox">
+         
+     </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
