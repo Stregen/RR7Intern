@@ -55,14 +55,14 @@ function backwardsClick() {
     textAreaFunc();
 }
 
-function clearClick() {
-    document.getElementById("Textbox").innerHTML = ""; 
+function clearClick() { 
     console.log("Pressed clear");
     for (var i = 0; i < counter; i++) {
         sequenceArray.pop();
     }
     counter = 0;
     console.log("Pressed empty. Array and counter resat");
+    document.getElementById("Textbox").innerHTML = "";
 }
 
 function startClick() {
