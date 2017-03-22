@@ -111,9 +111,34 @@ h1 {
 }
 
 #clear {
-    color:blue
+    color:blue;
 }
 
 #undo {
-    color:red
+    color:red;
+    /*background: url(../images/backwards.png) center;*/ 
+}
+
+#left45 {
+    background: url(../images/left45.png) center;
+}
+
+#right45 {
+    background: url(../images/right45.png) center;
+}
+
+#left90 {
+    background: url(../images/left90.png) center;
+}
+
+#right90 {
+    background: url(../images/right90.png) center;
+}
+
+#forward {
+    background: url(../images/forwards.png) center;
+}
+
+#backwards {
+    background: url(../images/backwards.png) center;
 }
