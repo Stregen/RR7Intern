@@ -15,7 +15,7 @@ var sequenceArray = [];
 
 function left45Click() {
     console.log("Pressed 45 left");
-    sequenceArray.push("../images/left45.png");
+    sequenceArray.push("../images/left45smol.png");
     console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
@@ -23,35 +23,40 @@ function left45Click() {
 
 function left90Click() {
     console.log("Pressed 90 left");
-    sequenceArray.push("Left 90");
-    counter++;
-    textAreaFunc();
-}
-
-function right90Click() {
-    console.log("Pressed right 90");
-    sequenceArray.push("Right 90");
+    sequenceArray.push("../images/left90smol.png");
+    console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
 }
 
 function right45Click() {
     console.log("Pressed right 45");
-    sequenceArray.push("Right 45");
+    sequenceArray.push("../images/right45smol.png");
+    console.log(sequenceArray[counter]);
+    counter++;
+    textAreaFunc();
+}
+
+function right90Click() {
+    console.log("Pressed right 90");
+    sequenceArray.push("../images/right90smol.png");
+    console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
 }
 
 function forwardClick() {
     console.log("Pressed forward");
-    sequenceArray.push("Forward");
+    sequenceArray.push("../images/forwardssmol.png");
+    console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
 }
 
 function backwardsClick() {
     console.log("Pressed backwards");
-    sequenceArray.push();
+    sequenceArray.push("../images/backwardssmol.png");
+    console.log(sequenceArray[counter]);
     counter++;
     textAreaFunc();
 }
@@ -80,15 +85,23 @@ function undoClick() {
     textAreaFunc();
 }
 
+//Add images to DIV
 function textAreaFunc() {
     document.getElementById("Textbox").innerHTML = "";
-
+    console.log(counter);
     for (i = 0; i < counter; i++) {
-        var s = sequenceArray[counter]
-        var imgPath = "<img src='" + s + "' />";
-        var buffer = "" + sequenceArray[counter];
-        document.getElementById("Textbox").innerHTML += imgPath;
-        console.log(imgPath);
+        //var s = sequenceArray[counter]
+        //var imgPath = "<img src='" + s + "' />";
+        //var buffer = "" + sequenceArray[counter];
+        //document.getElementById("Textbox").innerHTML += imgPath;
+        //console.log(imgPath);
+
+        //New try
+        var img = document.createElement('img');
+        img.setAttribute('src', sequenceArray[i]);
+        console.log(img.src);
+        document.getElementById("Textbox").appendChild(img);
+        
     }
 }
 
