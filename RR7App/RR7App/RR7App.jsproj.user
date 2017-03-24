@@ -4,7 +4,7 @@
     <ReferenceCachePath>C:\Users\nonse\AppData\Local\Temp\2gqgg1r4_RR7App_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>RippleNexusS</DebuggerFlavor>
-    <AndroidEmulatorID>AndroidEmulator;Google Android Emulator</AndroidEmulatorID>
+    <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
+    <AndroidEmulatorID>AndroidDevice;Device</AndroidEmulatorID>
   </PropertyGroup>
 </Project>
