@@ -86,7 +86,7 @@ h1 {
 }
 
 .LowerButtonMenu button {
-    position: relative;
+    position: initial;
     width: 31vw;
     background-color: white;
     border: 3px solid black;
@@ -141,4 +141,22 @@ h1 {
 
 #backwards {
     background: url(../images/backwards.png) center no-repeat;
+}
+
+#MAC {
+    margin-left: 7px;
+    top: 12vh;
+    background: url(../images/Bt.png) center no-repeat;
+    background-size: 100%;
+    width: 12vw;
+    height: 6vh;
+    /*position: relative;*/
+    resize: none;
+    
+}
+
+#macArea {
+    padding-right: 10px;
+    
+
 }
