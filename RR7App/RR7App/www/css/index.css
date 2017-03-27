@@ -76,7 +76,7 @@ h1 {
 }
 
 .LowerButtonMenu {
-    padding-top: 7vh;
+    padding-top: 3vh;
     left: 2vw;
     position: relative;
     width: 96vw;
@@ -144,8 +144,7 @@ h1 {
 }
 
 #MAC {
-    margin-left: 7px;
-    top: 12vh;
+    margin-left: 2vw;
     background: url(../images/Bt.png) center no-repeat;
     background-size: 100%;
     width: 12vw;
@@ -156,7 +155,5 @@ h1 {
 }
 
 #macArea {
-    padding-right: 10px;
-    
-
+    margin-right: 3vw;
 }
